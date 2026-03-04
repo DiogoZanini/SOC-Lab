@@ -4,3 +4,16 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 ## 📦 Dependências
 - [Oracle VirtualBox](https://www.virtualbox.org/) — Plataforma de virtualização;
 - [Ubuntu Desktop](https://ubuntu.com/download/desktop) — Sistema operacional base para o ambiente do laboratório.
+
+## 🚀 Primeiros Passos
+<details>
+  <summary>Configuração da Máquina Virtual</summary>
+
+  - Memória Base: 8192 MB (8 GB);
+  - Número de CPUs: 4 CPUs;
+  - Tamanho do Disco: 25 GB;
+  - Adaptador de Rede: NAT (para acesso à internet durante a configuração).
+
+  > 💡 **Observação:** Essas especificações podem ser ajustadas com base nos recursos da sua máquina host e requisitos do laboratório.
+
+</details>
