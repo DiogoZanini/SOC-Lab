@@ -4,6 +4,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 ## 📦 Dependências
 - [Oracle VirtualBox](https://www.virtualbox.org/) — Plataforma de virtualização;
 - [Ubuntu Desktop](https://ubuntu.com/download/desktop) — Sistema operacional base para o ambiente do laboratório.
+- [Docker](https://docs.docker.com/engine/install/ubuntu/) — Plataforma de contêineres para executar componentes do SOC.
 
 ## 🚀 Primeiros Passos
 <details>

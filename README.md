@@ -4,6 +4,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 ## 📦 Dependencies
 - [Oracle VirtualBox](https://www.virtualbox.org/) — Virtualization platform;
 - [Ubuntu](https://ubuntu.com/download/desktop) — Base operating system for the lab environment.
+- [Docker](https://docs.docker.com/engine/install/ubuntu/) — Container platform for running SOC components.
 
 ## 🚀 Getting Started
 <details>
