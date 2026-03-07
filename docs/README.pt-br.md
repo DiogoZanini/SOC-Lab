@@ -18,3 +18,11 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
   > 💡 **Observação:** Essas especificações podem ser ajustadas com base nos recursos da sua máquina host e requisitos do laboratório.
 
 </details>
+
+<details>
+  <summary> Instalando o Docker</summary>
+```bash
+  curl https://get.docker.com | bash
+```
+
+</details>

@@ -18,3 +18,11 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
   > 💡 **Note:** These specifications can be adjusted based on your host machine resources and lab requirements.
 
 </details>
+
+<details>
+  <summary> Installing Docker</summary>
+```bash
+  curl https://get.docker.com | bash
+```
+
+</details>
