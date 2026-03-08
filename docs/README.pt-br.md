@@ -26,3 +26,14 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 ```
 
 </details>
+
+<details>
+  <summary> Clonando a VM para o DFIR-IRIS</summary>
+
+  No VirtualBox, clique com o botão direito na VM principal → **Clonar**:
+  - Nome: `DFIR-IRIS`
+  - Tipo de clone: **Clone completo**
+
+  > 💡 **Nota:** Clonar evita reinstalar o sistema operacional e o Docker do zero.
+
+</details>

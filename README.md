@@ -26,3 +26,14 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 ```
 
 </details>
+
+<details>
+  <summary> Cloning the VM for DFIR-IRIS</summary>
+
+  In VirtualBox, right-click the main VM → **Clone**:
+  - Name: `DFIR-IRIS`
+  - Clone type: **Full clone**
+
+  > 💡 **Note:** Cloning avoids reinstalling the OS and Docker from scratch.
+
+</details>
