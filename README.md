@@ -6,6 +6,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 - [Ubuntu](https://ubuntu.com/download/desktop) — Base operating system for the lab environment.
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) — Container platform for running SOC components.
 - [Shuffler](https://github.com/Shuffle/Shuffle) — SOAR platform for security workflow automation.
+- [DFIR-IRIS](https://github.com/dfir-iris/iris-web) — Incident response platform for case management and investigation tracking.
 
 ## 🚀 Getting Started
 <details>
@@ -53,5 +54,30 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 ```
 
 > 💡 **Note:** Tested with the current version of Shuffle. Older versions may require manual permission adjustments on the `shuffle-database` directory.
+
+</details>
+
+<details>
+  <summary> Installing DFIR-IRIS</summary>
+  In the DFIR-IRIS Virtual Machine:
+
+```bash
+  cd /opt
+  git clone https://github.com/dfir-iris/iris-web.git
+  cd iris-web
+  git checkout v2.4.27
+  cp .env.model .env
+  docker compose up -d
+```
+
+  > ⚠️ **Warning:** For production deployments, edit the `.env` file to configure LDAP authentication, SECRET KEY, SALT, and Postgres credentials. For lab/testing purposes, the default values are sufficient.
+
+  > 💡 **Note:** `v2.4.27` was the latest version at the time of writing. Check the [releases page](https://github.com/dfir-iris/iris-web/releases) for a newer version.
+
+  To retrieve the default admin password:
+
+```bash
+  docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
+```
 
 </details>
