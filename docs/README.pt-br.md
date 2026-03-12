@@ -28,7 +28,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 
 ## 🚀 Primeiros Passos
 <details>
-  <summary> Instalando o Docker</summary>
+  <summary> Instalando o Docker em ambas as máquinas</summary>
   Em ambas as Máquinas Virtuais Shuffler e DFIR-IRIS:
 
 ```bash
