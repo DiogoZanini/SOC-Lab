@@ -8,37 +8,32 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 - [Shuffler](https://github.com/Shuffle/Shuffle) — SOAR platform for security workflow automation.
 - [DFIR-IRIS](https://github.com/dfir-iris/iris-web) — Incident response platform for case management and investigation tracking.
 
+## Infrastructure
+
+### VM 1 — Shuffler
+- **OS:** Ubuntu Desktop (GUI)
+- **Components:** Shuffler
+- **RAM:** 8192 MB (8 GB)
+- **CPUs:** 4
+- **Disk:** 25 GB
+- **Network:** NAT
+
+### VM 2 — DFIR-IRIS
+- **OS:** Ubuntu Live Server (CLI)
+- **Components:** DFIR-IRIS
+- **RAM:** 4096 MB (4 GB)
+- **CPUs:** 2
+- **Disk:** 25 GB
+- **Network:** NAT
+
 ## 🚀 Getting Started
 <details>
-  <summary>Virtual Machine Configuration</summary>
-
-  - Name: Shuffler
-  - Base Memory: 8192 MB (8 GB);
-  - Number of CPUs: 4 CPUs;
-  - Disk Size: 25 GB;
-  - Network Adapter: NAT (for internet access during setup).
-
-  > 💡 **Note:** These specifications can be adjusted based on your host machine resources and lab requirements.
-
-</details>
-
-<details>
-  <summary> Installing Docker</summary>
+  <summary> Installing Docker in both machines</summary>
+  In both the Shuffler and DFIR-IRIS Virtual Machines:
 
 ```bash
   curl https://get.docker.com | bash
 ```
-
-</details>
-
-<details>
-  <summary> Cloning the VM for DFIR-IRIS</summary>
-
-  In VirtualBox, right-click the main VM → **Clone**:
-  - Name: `DFIR-IRIS`
-  - Clone type: **Full clone**
-
-  > 💡 **Note:** Cloning avoids reinstalling the OS and Docker from scratch.
 
 </details>
 
