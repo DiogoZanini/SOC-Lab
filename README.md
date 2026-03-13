@@ -9,6 +9,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) — Container platform for running SOC components.
 - [Shuffler](https://github.com/Shuffle/Shuffle) — SOAR platform for security workflow automation.
 - [DFIR-IRIS](https://github.com/dfir-iris/iris-web) — Incident response platform for case management and investigation tracking.
+- [Ollama]() — Local AI model runner for alert enrichment and automated threat analysis.
 
 ## Infrastructure
 

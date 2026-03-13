@@ -9,6 +9,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) — Plataforma de contêineres para executar componentes do SOC.
 - [Shuffler](https://github.com/Shuffle/Shuffle) — Plataforma SOAR para automação de fluxos de segurança.
 - [DFIR-IRIS](https://github.com/dfir-iris/iris-web) — Plataforma de resposta a incidentes para gerenciamento de casos e rastreamento de investigações.
+- [Ollama](https://github.com/ollama/ollama) — Executor local de modelos de IA para enriquecimento de alertas e análise automatizada de ameaças.
 
 ## Infraestrutura
 
