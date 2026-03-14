@@ -18,7 +18,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 - **Componentes:** Shuffler
 - **RAM:** 8192 MB (8 GB)
 - **CPUs:** 4
-- **Disco:** 25 GB
+- **Disco:** 80 GB
 - **Rede:** NAT
 
 ### VM 2 — DFIR-IRIS
@@ -79,3 +79,13 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 ```
 
 </details>
+
+## Solução de Problemas
+Problemas comuns e suas soluções.
+
+### Conexão resetada durante o download da imagem (read: connection reset by peer)
+- **Problema:** `read tcp [abcd:abcd:abcd]:60900->[abcd:abcd:abcd]:443: read: connection reset by peer` — O Docker usando IPv6 causou instabilidade no download.
+- **Solução:**
+```bash
+  sysctl -w net.ipv6.conf.all.disable_ipv6=1
+```

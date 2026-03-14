@@ -9,7 +9,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) — Container platform for running SOC components.
 - [Shuffler](https://github.com/Shuffle/Shuffle) — SOAR platform for security workflow automation.
 - [DFIR-IRIS](https://github.com/dfir-iris/iris-web) — Incident response platform for case management and investigation tracking.
-- [Ollama]() — Local AI model runner for alert enrichment and automated threat analysis.
+- [Ollama](https://github.com/ollama/ollama) — Local AI model runner for alert enrichment and automated threat analysis.
 
 ## Infrastructure
 
@@ -18,7 +18,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 - **Components:** Shuffler
 - **RAM:** 8192 MB (8 GB)
 - **CPUs:** 4
-- **Disk:** 25 GB
+- **Disk:** 80 GB
 - **Network:** NAT
 
 ### VM 2 — DFIR-IRIS
@@ -79,3 +79,13 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 ```
 
 </details>
+
+## Troubleshooting
+Common issues and their solutions.
+
+### Connection reset during image pull (read: connection reset by peer)
+- **Problem:** `read tcp [abcd:abcd:abcd]:60900->[abcd:abcd:abcd]:443: read: connection reset by peer` — Docker using IPv6 caused unstable downloads.
+- **Solution:**
+```bash
+  sysctl -w net.ipv6.conf.all.disable_ipv6=1
+```
