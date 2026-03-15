@@ -35,7 +35,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
   In both the Shuffler and DFIR-IRIS Virtual Machines:
 
 ```bash
-  curl https://get.docker.com | bash
+curl https://get.docker.com | bash
 ```
 
 </details>
@@ -45,10 +45,10 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
   In the Shuffler Virtual Machine:
 
 ```bash
-  cd /opt
-  git clone https://github.com/Shuffle/Shuffle
-  cd Shuffle
-  docker compose up -d
+cd /opt
+git clone https://github.com/Shuffle/Shuffle
+cd Shuffle
+docker compose up -d
 ```
 
 > 💡 **Note:** Tested with the current version of Shuffle. Older versions may require manual permission adjustments on the `shuffle-database` directory.
@@ -60,12 +60,12 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
   In the DFIR-IRIS Virtual Machine:
 
 ```bash
-  cd /opt
-  git clone https://github.com/dfir-iris/iris-web.git
-  cd iris-web
-  git checkout v2.4.27
-  cp .env.model .env
-  docker compose up -d
+cd /opt
+git clone https://github.com/dfir-iris/iris-web.git
+cd iris-web
+git checkout v2.4.27
+cp .env.model .env
+docker compose up -d
 ```
 
   > ⚠️ **Warning:** For production deployments, edit the `.env` file to configure LDAP authentication, SECRET KEY, SALT, and Postgres credentials. For lab/testing purposes, the default values are sufficient.
@@ -75,7 +75,7 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
   To retrieve the default admin password:
 
 ```bash
-  docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
+docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
 ```
 
 </details>
