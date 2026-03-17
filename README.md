@@ -80,6 +80,23 @@ Security Operations Center lab for hands-on practice with SIEM, log analysis, th
 
 </details>
 
+<details>
+  <summary>Installing Ollama</summary>
+
+  In the Shuffler Virtual Machine:
+```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+```
+
+  After installation, override the generated service file with the custom configuration on "config/ollama.service" to expose Ollama on all network interfaces:
+```bash
+  cp config/ollama.service /etc/systemd/system/ollama.service
+  systemctl daemon-reload
+  systemctl restart ollama
+```
+
+</details>
+
 ## Troubleshooting
 Common issues and their solutions.
 

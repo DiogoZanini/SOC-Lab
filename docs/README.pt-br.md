@@ -80,6 +80,23 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
 
 </details>
 
+<details>
+  <summary>Instalando o Ollama</summary>
+
+  Na Máquina Virtual Shuffler:
+```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+```
+
+  Após a instalação, substitua o arquivo de serviço gerado pela configuração personalizada em "config/ollama.service" para expor o Ollama em todas as interfaces de rede:
+```bash
+  cp config/ollama.service /etc/systemd/system/ollama.service
+  systemctl daemon-reload
+  systemctl restart ollama
+```
+
+</details>
+
 ## Solução de Problemas
 Problemas comuns e suas soluções.
 
