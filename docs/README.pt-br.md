@@ -35,7 +35,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
   Em ambas as Máquinas Virtuais Shuffler e DFIR-IRIS:
 
 ```bash
-  curl https://get.docker.com | bash
+curl https://get.docker.com | bash
 ```
 
 </details>
@@ -45,10 +45,10 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
   Na Máquina Virtual Shuffler:
   
 ```bash
-  cd /opt
-  git clone https://github.com/Shuffle/Shuffle
-  cd Shuffle
-  docker compose up -d
+cd /opt
+git clone https://github.com/Shuffle/Shuffle
+cd Shuffle
+docker compose up -d
 ```
 
 > 💡 **Nota:** Testado com a versão atual do Shuffle. Versões anteriores podem exigir ajuste manual de permissões no diretório `shuffle-database`.
@@ -60,12 +60,12 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
   Na Máquina Virtual DFIR-IRIS:
   
 ```bash
-  cd /opt
-  git clone https://github.com/dfir-iris/iris-web.git
-  cd iris-web
-  git checkout v2.4.27
-  cp .env.model .env
-  docker compose up -d
+cd /opt
+git clone https://github.com/dfir-iris/iris-web.git
+cd iris-web
+git checkout v2.4.27
+cp .env.model .env
+docker compose up -d
 ```
 
   > ⚠️ **Aviso:** Para deploys em produção, edite o arquivo `.env` para configurar autenticação LDAP, SECRET KEY, SALT e credenciais do Postgres. Para fins de laboratório/testes, os valores padrão são suficientes.
@@ -75,7 +75,7 @@ Laboratório de Centro de Operações de Segurança para prática hands-on com S
   Para recuperar a senha padrão do administrador:
 
 ```bash
-  docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
+docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
 ```
 
 </details>
@@ -104,5 +104,5 @@ Problemas comuns e suas soluções.
 - **Problema:** `read tcp [abcd:abcd:abcd]:60900->[abcd:abcd:abcd]:443: read: connection reset by peer` — O Docker usando IPv6 causou instabilidade no download.
 - **Solução:**
 ```bash
-  sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
 ```
