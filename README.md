@@ -85,14 +85,14 @@ docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
 
   In the Shuffler Virtual Machine:
 ```bash
-  curl -fsSL https://ollama.com/install.sh | sh
+curl -fsSL https://ollama.com/install.sh | sh
 ```
 
   After installation, override the generated service file with the custom configuration on "config/ollama.service" to expose Ollama on all network interfaces:
 ```bash
-  cp config/ollama.service /etc/systemd/system/ollama.service
-  systemctl daemon-reload
-  systemctl restart ollama
+cp config/ollama.service /etc/systemd/system/ollama.service
+systemctl daemon-reload
+systemctl restart ollama
 ```
 
 </details>
@@ -104,5 +104,5 @@ Common issues and their solutions.
 - **Problem:** `read tcp [abcd:abcd:abcd]:60900->[abcd:abcd:abcd]:443: read: connection reset by peer` — Docker using IPv6 caused unstable downloads.
 - **Solution:**
 ```bash
-  sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
 ```

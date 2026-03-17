@@ -85,14 +85,14 @@ docker logs iriswebapp_app 2>&1 | grep 'create_safe_admin'
 
   Na Máquina Virtual Shuffler:
 ```bash
-  curl -fsSL https://ollama.com/install.sh | sh
+curl -fsSL https://ollama.com/install.sh | sh
 ```
 
   Após a instalação, substitua o arquivo de serviço gerado pela configuração personalizada em "config/ollama.service" para expor o Ollama em todas as interfaces de rede:
 ```bash
-  cp config/ollama.service /etc/systemd/system/ollama.service
-  systemctl daemon-reload
-  systemctl restart ollama
+cp config/ollama.service /etc/systemd/system/ollama.service
+systemctl daemon-reload
+systemctl restart ollama
 ```
 
 </details>
