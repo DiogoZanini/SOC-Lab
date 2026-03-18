@@ -97,6 +97,18 @@ systemctl restart ollama
 
 </details>
 
+<details>
+  <summary>Instalando o Ollama Web UI</summary>
+
+  Na Máquina Virtual Shuffler:
+```bash
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
+
+  Acesse a interface do WebUI em http://localhost:3000/ e crie uma conta.
+
+</details>
+
 ## Solução de Problemas
 Problemas comuns e suas soluções.
 
